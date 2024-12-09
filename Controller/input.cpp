@@ -37,7 +37,7 @@ namespace uk {
                     padding: 5px;
                 }
 
-                .uk-input:placeholder { color: var(--neutral); }
+                .uk-input::placeholder { color: var(--neutral); }
 
                 .uk-radio:checked, .uk-checkbox:checked {
                     background-color: var(--primary);
@@ -52,7 +52,7 @@ namespace uk {
                     vertical-align: middle;
                     display: inline-block;
                     align-items: baseline;
-                    display: flex:
+                    display: flex;
                 }
 
                 .uk-radio { border-radius: 10px; }
@@ -81,8 +81,6 @@ namespace uk {
                     background-color: rgba( from var(--neutral) r g b / 10% );
                     border: 1px solid var(--neutral);
                 }
-
-                .uk-input-placeholder--${0}:placeholder { color: var(--${0}); }
 
                 .uk-input-focus-${0}:focus {
                     background-color: rgba( from var(--${0}) r g b / 10% );

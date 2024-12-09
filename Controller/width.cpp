@@ -42,8 +42,8 @@ namespace uk {
 
                 cli.write( regex::format( _STRING_(
 
-                   .uk-child-width-auto${0}>:not([class*='uk-width'])  { flex-grow: 1; width: auto; }
-                   .uk-width-auto${0}                                  { flex-grow: 1; width: auto; }
+                   .uk-child-width-auto${0}>:not([class*='uk-width'])  { width: auto; flex-grow: 1; }
+                   .uk-width-auto${0}                                  { width: auto; flex-grow: 1; }
 
                    .uk-child-width-expand${0}>:not([class*='uk-width']){ min-width: 100vw; }
                    .uk-width-expand${0}                                { min-width: 100vw; }

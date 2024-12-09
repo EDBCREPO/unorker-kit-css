@@ -27,8 +27,9 @@ namespace uk {
                 "dark"   , "light"    , "neutral"
             })){
                 cli.write( regex::format( _STRING_(
-                   .uk-text-hover-${0}:hover { color: var(--${0}) !important; }
-                   .uk-text-${0}             { color: var(--${0}) !important; }
+                   .uk-placeholder-${0}::placeholder { color: var(--${0}) !important; }
+                   .uk-text-hover-${0}:hover         { color: var(--${0}) !important; }
+                   .uk-text-${0}                     { color: var(--${0}) !important; }
                 ), color ));
             }
 
