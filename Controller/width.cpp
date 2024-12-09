@@ -23,8 +23,8 @@ namespace uk {
 
                 for( auto x=12; x>=1; x-- ){ for( auto y=12; y>=1; y-- ){ if( x >= y ){ continue; }
                     cli.write( regex::format( _STRING_(
-                       .uk-child-width-${0}-${1}${2}>:not([class*='uk-width']){ width: calc( ${0}00% / ${1} - 1.2% ); }
-                       .uk-width-${0}-${1}${2}                                { width: calc( ${0}00% / ${1} - 1.2% ); }
+                       .uk-child-width-${0}-${1}${2}>:not([class*='uk-width']){ width: calc( ${0}00% / ${1} ); }
+                       .uk-width-${0}-${1}${2}                                { width: calc( ${0}00% / ${1} ); }
                     ), x, y, size.first ));
                 }}
 
