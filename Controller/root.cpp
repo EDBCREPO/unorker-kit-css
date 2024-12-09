@@ -7,13 +7,23 @@ namespace uk {
 
         app.ALL([=]( express_http_t cli ){
             cli.render( _STRING_ (
+
+                @font-face {
+                    font-family: 'Material Symbols Rounded';
+                    src: url(./icon.woff2) format('woff2');
+                    font-style: normal;
+                    font-weight: 400;
+                }
+
+                /*.........................................................................*/
                 
                 :root {
                     --secondary: #0d0d0c;
                     --primary:   #6636fc;
-                    --success:   #c0f461;
+                    --success:   #50d35a;
                     --warning:   orange;
-                    --danger:    crimson;
+                    --neutral:   #444;
+                    --danger:    #ff0d3b;
                     --light:     white;
                     --dark:      black;
                     --mute:      #aaa;
@@ -29,9 +39,9 @@ namespace uk {
 
                 /*.........................................................................*/
 
-                audio, canvas, iframe, img, svg, video { vertical-align: middle; max-width: 100%; height: auto; box-sizing: border-box; }
+                * { color: inherit; text-decoration: none !important; transition: all 0.3s ease-in-out; align-content: flex-start; box-sizing: border-box; }
 
-                * { color: inherit; text-decoration: none !important; transition: all 0.3s ease-in-out; align-content: flex-start; }
+                audio, canvas, iframe, img, svg, video { vertical-align: middle; max-width: 100%; height: auto; box-sizing: border-box; }
 
                 h1,h2,h3,h4,h5,h6,p,hr { margin: 0px; user-select: text; }
 
@@ -40,6 +50,8 @@ namespace uk {
                 body { overflow-x: hidden; margin: 0px; }
 
                 h1,h2,h3 { font-weight: bolder; }
+
+                textarea { transition: none; }
 
                 /*.........................................................................*/
 
@@ -55,15 +67,6 @@ namespace uk {
                 .uk-yflip { transform: scaleY(-1) !important; }
 
                 .uk-xflip { transform: scaleX(-1) !important; }
-
-                /*.........................................................................*/
-
-                @font-face {
-                    font-family: 'Material Symbols Rounded';
-                    src: url(./icon.woff2) format('woff2');
-                    font-style: normal;
-                    font-weight: 400;
-                }
 
                 /*.........................................................................*/
 

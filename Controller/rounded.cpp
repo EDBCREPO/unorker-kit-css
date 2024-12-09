@@ -11,7 +11,7 @@ namespace uk {
                 { "none",    "0px"  },
                 { "2xsmall", "2px"  },
                 { "xsmall",  "5px"  },
-                { "small",   "10px"  },
+                { "small",   "10px" },
                 { "medium",  "20px" },
                 { "large",   "25px" },
                 { "xlarge",  "30px" },
@@ -41,6 +41,13 @@ namespace uk {
                 }
                 
                 .uk-rounded-remove-bottom { 
+                    border-bottom-left-radius:  0px; 
+                    border-bottom-right-radius: 0px; 
+                }
+                
+                .uk-rounded-remove { 
+                    border-top-left-radius:     0px; 
+                    border-top-right-radius:    0px; 
                     border-bottom-left-radius:  0px; 
                     border-bottom-right-radius: 0px; 
                 }

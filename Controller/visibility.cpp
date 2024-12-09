@@ -16,7 +16,7 @@ namespace uk {
 
                 if( size.first != nullptr ){
                     cli.write( regex::format( _STRING_(
-                       @media( max-width: ${0}px ) {
+                       @media( min-width: ${0}px ) {
                     ), size.second ));
                 }
 

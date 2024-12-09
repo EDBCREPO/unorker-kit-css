@@ -23,12 +23,12 @@ namespace uk {
             
             forEach( color, ptr_t<string_t>({
                 "primary", "secondary", "success",
-                "warning", "danger"   , "mute" 
-                "dark"   , "light"
+                "warning", "danger"   , "mute"   ,
+                "dark"   , "light"    , "neutral"
             })){
                 cli.write( regex::format( _STRING_(
-                   .uk-text-hover-${0}:hover { color: var(--${0}); }
-                   .uk-text-${0}             { color: var(--${0}); }
+                   .uk-text-hover-${0}:hover { color: var(--${0}) !important; }
+                   .uk-text-${0}             { color: var(--${0}) !important; }
                 ), color ));
             }
 

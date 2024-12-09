@@ -42,14 +42,14 @@ namespace uk {
 
                 cli.write( regex::format( _STRING_(
 
-                   .uk-child-height-expand${0}>:not([class*='uk-height']){ height: 100vh; }
-                   .uk-height-expand${0}                                 { height: 100vh; }
+                   .uk-child-height-expand${0}>:not([class*='uk-height']){ min-height: 100vh; }
+                   .uk-height-expand${0}                                 { min-height: 100vh; }
 
-                   .uk-child-height-auto${0}>:not([class*='uk-height']){ flex: initial; }
-                   .uk-height-auto${0}                                 { flex: initial; }
+                   .uk-child-height-fill${0}>:not([class*='uk-height'])  { min-height: 100%; }
+                   .uk-height-fill${0}                                   { min-height: 100%; }
 
-                   .uk-child-height-fill${0}>:not([class*='uk-height']){ height: 100%; }
-                   .uk-height-fill${0}                                 { height: 100%; }
+                   .uk-child-height-1-1${0}>:not([class*='uk-height'])   { min-height: 100%; }
+                   .uk-height-1-1${0}                                    { min-height: 100%; }
 
                 ), size.first ));
 

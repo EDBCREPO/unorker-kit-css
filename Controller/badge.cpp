@@ -15,7 +15,8 @@ namespace uk {
                 { "danger",    "light" },
                 { "mute",      "dark"  },
                 { "light",     "dark"  },
-                { "dark",      "light" }
+                { "dark",      "light" },
+                { "neutral",   "light" }
             }).data() ){
                 cli.write( regex::format( _STRING_(
                     .uk-badge-${0}-outline { 

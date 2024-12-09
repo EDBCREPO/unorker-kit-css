@@ -42,14 +42,17 @@ namespace uk {
 
                 cli.write( regex::format( _STRING_(
 
-                   .uk-child-width-expand${0}>:not([class*='uk-width']){ width: 100vw; }
-                   .uk-width-expand${0}                                { width: 100vw; }
+                   .uk-child-width-auto${0}>:not([class*='uk-width'])  { flex-grow: 1; width: auto; }
+                   .uk-width-auto${0}                                  { flex-grow: 1; width: auto; }
 
-                   .uk-child-width-auto${0}>:not([class*='uk-width']){ flex: initial; }
-                   .uk-width-auto${0}                                { flex: initial; }
+                   .uk-child-width-expand${0}>:not([class*='uk-width']){ min-width: 100vw; }
+                   .uk-width-expand${0}                                { min-width: 100vw; }
 
-                   .uk-child-width-fill${0}>:not([class*='uk-width']){ width: 100%; }
-                   .uk-width-fill${0}                                { width: 100%;  }
+                   .uk-child-width-fill${0}>:not([class*='uk-width'])  { min-width: 100%; }
+                   .uk-width-fill${0}                                  { min-width: 100%; }
+
+                   .uk-child-width-1-1${0}>:not([class*='uk-width'])   { min-width: 100%; }
+                   .uk-width-1-1${0}                                   { min-width: 100%; }
 
                 ), size.first ));
 

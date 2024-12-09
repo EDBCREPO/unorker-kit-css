@@ -30,12 +30,10 @@ namespace uk {
                     { "large",   "30px" },
                     { "xlarge",  "35px" },
                     { "2xlarge", "40px" }
-                }).data() ){
-                    cli.write( regex::format( _STRING_(
-                       .uk-child-gap-${0}${2}>:not([class*="uk-gap"]){ gap:${1}; } 
-                       .uk-gap-${0}${2}                              { gap:${1}; }
-                    ), item.first, item.second, size.first ));
-                }
+                }).data() ){ cli.write( regex::format( _STRING_(
+                    .uk-child-gap-${0}${2}>:not([class*="uk-gap"]){ gap:${1}; } 
+                    .uk-gap-${0}${2}                              { gap:${1}; }
+                ), item.first, item.second, size.first )); }
 
                 cli.write( regex::format( _STRING_( 
                    .uk-child-gap${0}>:not([class*="uk-gap"]){ gap:20px; }

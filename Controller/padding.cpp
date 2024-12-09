@@ -53,6 +53,13 @@ namespace uk {
                         padding-top:    0px;
                         padding-bottom: 0px;
                     }
+
+                    .uk-padding-remove${0} {
+                        padding-left:   0px;
+                        padding-right:  0px;
+                        padding-top:    0px;
+                        padding-bottom: 0px;
+                    }
                     
                     .uk-child-padding${0}>:not([class*="uk-padding"]){ padding:20px; }
                     .uk-padding${0}                                  { padding:20px; }

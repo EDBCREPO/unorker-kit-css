@@ -18,6 +18,7 @@ namespace uk {
                     border: 1px solid var(--none);
                     text-transform: capitalize;
                     border-color: var(--none);
+                    -webkit-appearance: none;
                     border-radius: 20px;
                     align-items: center;
                     text-align: center;
@@ -33,8 +34,8 @@ namespace uk {
     /*.........................................................................*/
 
                 .uk-button-text::before {
+                    border-bottom: 1px solid var(--neutral);
                     transition: right 0.3s ease-out;
-                    border-bottom: 1px solid #222;
                     position: absolute;
                     content: "";
                     right: 100%;
@@ -74,7 +75,8 @@ namespace uk {
                 { "danger",    "light" },
                 { "mute",      "dark"  },
                 { "light",     "dark"  },
-                { "dark",      "light" }
+                { "dark",      "light" },
+                { "neutral",   "light" }
             }).data() ){
                 cli.write( regex::format( _STRING_(
                     .uk-button-${0}-outline { 

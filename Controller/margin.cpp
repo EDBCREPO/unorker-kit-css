@@ -53,6 +53,13 @@ namespace uk {
                         margin-top:    0px;
                         margin-bottom: 0px;
                     }
+
+                    .uk-margin-remove${0} {
+                        margin-left:   0px;
+                        margin-right:  0px;
+                        margin-top:    0px;
+                        margin-bottom: 0px;
+                    }
                     
                     .uk-child-margin${0}>:not([class*="uk-margin"]){ margin:20px; }
                     .uk-margin${0}                                  { margin:20px; }

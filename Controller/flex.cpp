@@ -37,7 +37,7 @@ namespace uk {
                     { "right",   "flex-end"      }
                 }).data() ){
                     cli.write( regex::format( _STRING_(
-                    .uk-flex-${0}${2} { justify-content: ${1}; }
+                       .uk-flex-${0}${2} { justify-content: ${1}; }
                     ), item.first, item.second, size.first )); 
                 }
 
