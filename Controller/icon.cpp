@@ -15,6 +15,7 @@ namespace uk {
                     vertical-align: -webkit-baseline-middle;
                     font-family: 'Material Symbols Rounded';
                     vertical-align: text-bottom;
+                    align-content: center;
                     font-weight: normal;
                     font-style: normal;
                     font-size: 24px;

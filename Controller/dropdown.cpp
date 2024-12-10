@@ -9,23 +9,26 @@ namespace uk {
 
             cli.write( _STRING_(
 
-                .uk-dropdown { position: relative; z-index: 1000;  }
-
-                .uk-dropdown:hover>ul, .uk-dropdown>ul:hover {
-                    transform: translateX(-120%) translateY(0%);
+                .uk-dropdown-hover:hover>ul, .uk-dropdown:has(:checked)>ul, .uk-dropdown>ul:hover {
+                    padding: 10px; margin: 0px; width: 100%;
                     background-color: var(--secondary);
-                    padding: 10px; margin: 0px;
                     flex-direction: column;
                     color: var(--light);
                     border-radius: 5px;
                     position: absolute;
-                    left:50%; top:-6px;
+                    left: 0; top:100%;
                     list-style: none;
-                    flex-wrap: wrap;
                     display: flex;
                 }
 
-                .uk-dropdown>ul { display: none; }
+                [class*="uk-dropdown"] { position: relative; z-index: 1000;  }
+
+                [class*="uk-dropdown"]>ul, .uk-dropdown>input { display: none; }
+
+                .uk-dropdown-top:hover>ul,    .uk-dropdown-top>ul:hover    { left:0; top:unset; bottom:100%; right:unset; }
+                .uk-dropdown-bottom:hover>ul, .uk-dropdown-bottom>ul:hover { left:0; top:100%; bottom:unset; right:unset; }
+                .uk-dropdown-right:hover>ul,  .uk-dropdown-right>ul:hover  { left:unset; top:unset; bottom:unset; right:100%; transform:translate( 0px, -50% ); }
+                .uk-dropdown-left:hover>ul,   .uk-dropdown-left>ul:hover   { left:100%; top:unset; bottom:unset; right:unset; transform:translate( 0px, -50% ); }
 
             ));
 
@@ -42,8 +45,7 @@ namespace uk {
             }).data() ){
                 cli.write( regex::format( _STRING_(
                     .uk-dropdown-${0}:hover>ul, .uk-dropdown-${0}>ul:hover { 
-                        background-color: var(--${0});
-                        color: var(--${1});
+                        background-color: var(--${0}); color: var(--${1});
                     }
                 ), color.first, color.second ));
             }
