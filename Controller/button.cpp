@@ -19,6 +19,7 @@ namespace uk {
                     text-transform: capitalize;
                     border-color: var(--none);
                     -webkit-appearance: none;
+                    justify-content: center;
                     border-radius: 20px;
                     align-items: center;
                     text-align: center;
