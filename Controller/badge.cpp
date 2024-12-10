@@ -16,7 +16,7 @@ namespace uk {
                 { "mute",      "dark"  },
                 { "light",     "dark"  },
                 { "dark",      "light" },
-                { "neutral",   "light" }
+                { "neutral",   "light" },
             }).data() ){
                 cli.write( regex::format( _STRING_(
                     .uk-badge-${0}-outline { 
@@ -34,9 +34,9 @@ namespace uk {
             cli.write( _STRING_(
                 .uk-badge { 
                     border: 1px solid var(--none);
+                    align-content: center;
                     border-radius: 30px;
                     text-align: center;
-                    font-weight: 400;
                     width: auto;
                 }
             ));

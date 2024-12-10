@@ -20,7 +20,7 @@ namespace uk {
                     "neutral" 
                 })){
                     cli.write( regex::format( _STRING_(
-                       .uk-border-${0}-${1} { border-${0}-color: var(--${1}) !important; }
+                       .uk-border-${0}-${1} { border-${0}-color: var(--${1}); }
                     ), item, color )); 
                 }
             }
@@ -29,7 +29,7 @@ namespace uk {
                 "top", "bottom", "left", "right"
             })){
                 cli.write( regex::format( _STRING_(
-                   .uk-border-remove-${0} { border-${0}-color: var(--none) !important; }
+                   .uk-border-remove-${0} { border-${0}-color: var(--none); }
                 ), color )); 
             }
         
@@ -40,7 +40,7 @@ namespace uk {
                 "neutral"
             })){
                 cli.write( regex::format( _STRING_(
-                   .uk-border-${0}               { border-color: var(--${0}) !important; }
+                   .uk-border-${0}               { border-color: var(--${0}) ; }
                    .uk-border-hover-${0}:hover   { border-color: var(--${0}) !important; }
                    .uk-border-active-${0}:active { border-color: var(--${0}) !important; }
                 ), color )); 

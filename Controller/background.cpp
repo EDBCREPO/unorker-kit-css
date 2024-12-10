@@ -20,7 +20,8 @@ namespace uk {
                 { "none",      "inherit"      }
             }).data() ){
                 cli.write( regex::format( _STRING_(
-                   .uk-background-${0} { background-color: var(--${0}); color: ${1}; }
+                   .uk-background-${0}             { background-color: var(--${0}); color: ${1}; }
+                   .uk-background-hover-${0}:hover { background-color: var(--${0}); color: ${1}; }
                 ), color.first, color.second )); 
             }
 
