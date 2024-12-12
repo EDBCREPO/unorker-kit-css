@@ -41,15 +41,15 @@ namespace uk {
 
                 * { color: inherit; text-decoration: none !important; transition: all 0.3s ease-in-out; align-content: flex-start; box-sizing: border-box; }
 
-                audio, canvas, iframe, img, svg, video { vertical-align: middle; max-width: 100%; height: auto; box-sizing: border-box; }
+                audio, canvas, iframe, img, svg, video { vertical-align: middle; max-width: 100%; height: auto; }
 
-                h1,h2,h3,h4,h5,h6,p,hr { margin: 0px; user-select: text; }
+                h1,h2,h3,h4,h5,h6,p,hr { margin: 0px; user-select: text; display: flex; }
 
                 img:not([src]) { visibility: hidden; display: none; }
 
                 body { overflow-x: hidden; margin: 0px; }
 
-                h1,h2,h3 { font-weight: bolder; }
+                hr { border-color: var(--neutral); }
 
                 textarea { transition: none; }
 
@@ -81,9 +81,9 @@ namespace uk {
                 /*.........................................................................*/
 
                 a, .uk-link {
-                    color: var(--primary);
                     text-decoration: none;
                     cursor: pointer;
+                    color: inherit;
                 }
 
             ));

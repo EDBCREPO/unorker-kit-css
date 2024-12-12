@@ -10,6 +10,7 @@
 #include "./badge.cpp"
 #include "./input.cpp"
 #include "./index.cpp"
+#include "./header.cpp"
 #include "./height.cpp"
 #include "./border.cpp"
 #include "./margin.cpp"
@@ -42,6 +43,7 @@ namespace uk {
         app.USE( "input",      input()      );
         app.USE( "index",      index()      );
         app.USE( "height",     height()     );
+        app.USE( "header",     header()     );
         app.USE( "border",     border()     );
         app.USE( "button",     button()     );
         app.USE( "margin",     margin()     );

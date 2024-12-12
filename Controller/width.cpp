@@ -23,8 +23,8 @@ namespace uk {
 
                 for( auto x=12; x>=1; x-- ){ for( auto y=12; y>=1; y-- ){ if( x >= y ){ continue; }
                     cli.write( regex::format( _STRING_(
-                       .uk-child-width-${0}-${1}${2}>:not([class*='uk-width']){ width: calc( ${0}00% / ${1} ); }
-                       .uk-width-${0}-${1}${2}                                { width: calc( ${0}00% / ${1} ); }
+                       .uk-child-width-${0}-${1}${2}>:not([class*='uk-width']){ min-width: calc( ${0}00% / ${1} ); max-width: calc( ${0}00% / ${1} ); }
+                       .uk-width-${0}-${1}${2}                                { min-width: calc( ${0}00% / ${1} ); max-width: calc( ${0}00% / ${1} ); }
                     ), x, y, size.first ));
                 }}
 
@@ -35,15 +35,14 @@ namespace uk {
                     { "large",   "450px" }
                 }).data() ){
                     cli.write( regex::format( _STRING_ (
-                       .uk-width-${0}${2}     { min-width:${1}; }
-                       .uk-max-width-${0}${2} { max-width:${1}; }
+                       .uk-width-${0}${2}     { min-width:${1}; max-width:${1}; }
                     ), item.first, item.second, size.first ));
                 }
 
                 cli.write( regex::format( _STRING_(
 
-                   .uk-child-width-auto${0}>:not([class*='uk-width'])  { width: auto; flex-grow: 1; }
-                   .uk-width-auto${0}                                  { width: auto; flex-grow: 1; }
+                   .uk-child-width-auto${0}>:not([class*='uk-width'])  { width: 100%; flex: auto; min-width: unset; max-width:unset; }
+                   .uk-width-auto${0}                                  { width: 100%; flex: auto; min-width: unset; max-width:unset; }
 
                    .uk-child-width-expand${0}>:not([class*='uk-width']){ min-width: 100vw; }
                    .uk-width-expand${0}                                { min-width: 100vw; }

@@ -24,36 +24,39 @@ namespace uk {
             }
 
             cli.write( _STRING_ ( 
+
+                .uk-rounded-hover-phill:hover { border-radius: 500px; }
+                .uk-rounded-phill             { border-radius: 500px; }
+
+                .uk-rounded-hover:hover       { border-radius: 15px;  } 
+                .uk-rounded                   { border-radius: 15px;  }
                 
                 .uk-rounded-remove-top { 
-                    border-top-left-radius:  0px; 
-                    border-top-right-radius: 0px; 
+                    border-top-left-radius:  0px !important; 
+                    border-top-right-radius: 0px !important; 
                 }
                 
                 .uk-rounded-remove-left { 
-                    border-top-left-radius:    0px; 
-                    border-bottom-left-radius: 0px; 
+                    border-top-left-radius:    0px !important; 
+                    border-bottom-left-radius: 0px !important; 
                 }
                 
                 .uk-rounded-remove-right { 
-                    border-top-right-radius:    0px; 
-                    border-bottom-right-radius: 0px; 
+                    border-top-right-radius:    0px !important; 
+                    border-bottom-right-radius: 0px !important; 
                 }
                 
                 .uk-rounded-remove-bottom { 
-                    border-bottom-left-radius:  0px; 
-                    border-bottom-right-radius: 0px; 
+                    border-bottom-left-radius:  0px !important; 
+                    border-bottom-right-radius: 0px !important; 
                 }
                 
                 .uk-rounded-remove { 
-                    border-top-left-radius:     0px; 
-                    border-top-right-radius:    0px; 
-                    border-bottom-left-radius:  0px; 
-                    border-bottom-right-radius: 0px; 
+                    border-top-left-radius:     0px !important; 
+                    border-top-right-radius:    0px !important; 
+                    border-bottom-left-radius:  0px !important; 
+                    border-bottom-right-radius: 0px !important; 
                 }
-
-                .uk-rounded-hover:hover { border-radius: 15px; } 
-                .uk-rounded             { border-radius: 15px; } 
                 
             ));
 

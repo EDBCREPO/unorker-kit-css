@@ -18,10 +18,11 @@ namespace uk {
                     align-content: center;
                     font-weight: normal;
                     font-style: normal;
-                    font-size: 24px;
+                    font-size: inherit;
                     line-height: 1;
                     content: attr(icon);
                     direction: ltr;
+                    font-size: 22px;
                     word-wrap: normal;
                     white-space: nowrap;
                     text-transform: none;

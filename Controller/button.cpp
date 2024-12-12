@@ -20,14 +20,14 @@ namespace uk {
                     border-color: var(--none);
                     -webkit-appearance: none;
                     justify-content: center;
-                    border-radius: 20px;
                     align-items: center;
                     text-align: center;
+                    border-radius: 5px;
+                    padding: 6px 10px;
                     font-weight: 600;
                     cursor: pointer;
                     font-size: 16px;
                     color: inherit;
-                    padding: 10px;
                     display: flex;
                     gap: 3px;
                 }

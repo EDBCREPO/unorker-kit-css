@@ -39,26 +39,26 @@ namespace uk {
 
                 cli.write( regex::format( _STRING_ (
 
-                    .uk-padding-remove-bottom${0} { padding-bottom: 0px; }
-                    .uk-padding-remove-top${0}    { padding-top:    0px; }
-                    .uk-padding-remove-left${0}   { padding-left:   0px; }
-                    .uk-padding-remove-right${0}  { padding-right:  0px; }
+                    .uk-padding-remove-bottom${0} { padding-bottom: 0px !important; }
+                    .uk-padding-remove-top${0}    { padding-top:    0px !important; }
+                    .uk-padding-remove-left${0}   { padding-left:   0px !important; }
+                    .uk-padding-remove-right${0}  { padding-right:  0px !important; }
 
                     .uk-padding-remove-horizontal${0} {
-                        padding-left:  0px;
-                        padding-right: 0px;
+                        padding-left:  0px !important;
+                        padding-right: 0px !important;
                     }
 
                     .uk-padding-remove-vertical${0} {
-                        padding-top:    0px;
-                        padding-bottom: 0px;
+                        padding-top:    0px !important;
+                        padding-bottom: 0px !important;
                     }
 
                     .uk-padding-remove${0} {
-                        padding-left:   0px;
-                        padding-right:  0px;
-                        padding-top:    0px;
-                        padding-bottom: 0px;
+                        padding-left:   0px !important;
+                        padding-right:  0px !important;
+                        padding-top:    0px !important;
+                        padding-bottom: 0px !important;
                     }
                     
                     .uk-child-padding${0}>:not([class*="uk-padding"]){ padding:20px; }

@@ -21,9 +21,9 @@ namespace uk {
                     border: 1px solid var(--none);
                     text-transform: capitalize;
                     border-color: var(--none);
-                    border-radius: 20px;
                     align-items: center;
                     text-align: center;
+                    border-radius: 5px;
                     font-weight: 600;
                     cursor: pointer;
                     font-size: 16px;

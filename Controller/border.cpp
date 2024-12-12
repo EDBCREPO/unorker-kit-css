@@ -29,7 +29,7 @@ namespace uk {
                 "top", "bottom", "left", "right"
             })){
                 cli.write( regex::format( _STRING_(
-                   .uk-border-remove-${0} { border-${0}-color: var(--none); }
+                   .uk-border-remove-${0} { border-${0}-color: var(--none) !important; }
                 ), color )); 
             }
         

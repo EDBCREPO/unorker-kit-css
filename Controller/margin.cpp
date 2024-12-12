@@ -39,26 +39,26 @@ namespace uk {
 
                 cli.write( regex::format( _STRING_ (
 
-                    .uk-margin-remove-bottom${0} { margin-bottom: 0px; }
-                    .uk-margin-remove-top${0}    { margin-top:    0px; }
-                    .uk-margin-remove-left${0}   { margin-left:   0px; }
-                    .uk-margin-remove-right${0}  { margin-right:  0px; }
+                    .uk-margin-remove-bottom${0} { margin-bottom: 0px !important; }
+                    .uk-margin-remove-top${0}    { margin-top:    0px !important; }
+                    .uk-margin-remove-left${0}   { margin-left:   0px !important; }
+                    .uk-margin-remove-right${0}  { margin-right:  0px !important; }
 
                     .uk-margin-remove-horizontal${0} {
-                        margin-left:  0px;
-                        margin-right: 0px;
+                        margin-left:  0px !important;
+                        margin-right: 0px !important;
                     }
 
                     .uk-margin-remove-vertical${0} {
-                        margin-top:    0px;
-                        margin-bottom: 0px;
+                        margin-top:    0px !important;
+                        margin-bottom: 0px !important;
                     }
 
                     .uk-margin-remove${0} {
-                        margin-left:   0px;
-                        margin-right:  0px;
-                        margin-top:    0px;
-                        margin-bottom: 0px;
+                        margin-left:   0px !important;
+                        margin-right:  0px !important;
+                        margin-top:    0px !important;
+                        margin-bottom: 0px !important;
                     }
                     
                     .uk-child-margin${0}>:not([class*="uk-margin"]){ margin:20px; }

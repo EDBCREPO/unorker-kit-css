@@ -17,14 +17,14 @@ namespace uk {
 
                 if( size.first != nullptr ){
                     cli.write( regex::format( _STRING_(
-                       @media( max-height: ${0}px ) {
+                       @media( max-width: ${0}px ) {
                     ), size.second ));
                 }
 
                 for( auto x=12; x>=1; x-- ){ for( auto y=12; y>=1; y-- ){ if( x >= y ){ continue; }
                     cli.write( regex::format( _STRING_(
-                       .uk-child-height-${0}-${1}${2}>:not([class*='uk-height']){ height: calc( ${0}00% / ${1} ); }
-                       .uk-height-${0}-${1}${2}                                 { height: calc( ${0}00% / ${1} ); }
+                       .uk-child-height-${0}-${1}${2}>:not([class*='uk-height']){ min-height: calc( ${0}00% / ${1} ); }
+                       .uk-height-${0}-${1}${2}                                 { min-height: calc( ${0}00% / ${1} ); }
                     ), x, y, size.first ));
                 }}
 
@@ -36,7 +36,6 @@ namespace uk {
                 }).data() ){
                     cli.write( regex::format( _STRING_ (
                        .uk-height-${0}${2}     { min-height:${1}; }
-                       .uk-max-height-${0}${2} { max-height:${1}; }
                     ), item.first, item.second, size.first ));
                 }
 

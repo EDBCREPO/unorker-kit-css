@@ -38,14 +38,14 @@ namespace uk {
                 .uk-text-lead       { font-size: 1.5rem; line-height: 1.5; }
                 .uk-text-italic     { font-style: italic; }
 
-                .uk-text-light      { font-weight: 300; }
-                .uk-text-normal     { font-weight: 400; }
-                .uk-text-bold       { font-weight: 700; }
-                .uk-text-bolder     { font-weight: bolder; }
+                .uk-text-light      { font-weight: 300;     }
+                .uk-text-normal     { font-weight: 400;     }
+                .uk-text-bold       { font-weight: 700;     }
+                .uk-text-bolder     { font-weight: bolder;  }
                 .uk-text-lighter    { font-weight: lighter; }
                 
-                .uk-text-lowecase   { text-transform: lowecase; }
-                .uk-text-uppercase  { text-transform: uppercase; }
+                .uk-text-lowecase   { text-transform: lowecase;   }
+                .uk-text-uppercase  { text-transform: uppercase;  }
                 .uk-text-capitalize { text-transform: capitalize; }
 
             ));
