@@ -7,10 +7,7 @@ namespace uk {
 
         app.ALL([=]( express_http_t cli ){ cli.send();
                 
-            cli.write( _STRING_( [class*=uk-position]{
-                position: absolute;
-                padding: 0px 5px;
-            }));
+            cli.write( _STRING_( [class*=uk-position]{ position: absolute; }));
 
             for( auto& size: map_t<string_t,int>({ 
                 { nullptr,   0 },

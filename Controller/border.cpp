@@ -20,7 +20,7 @@ namespace uk {
                     "neutral" 
                 })){
                     cli.write( regex::format( _STRING_(
-                       .uk-border-${0}-${1} { border-${0}-color: var(--${1}); }
+                       .uk-border-${0}-${1} { border-${0}-color: var(--${1}) !important; }
                     ), item, color )); 
                 }
             }

@@ -32,8 +32,8 @@ namespace uk {
                     { "2xlarge", "40px" }
                 }).data() ){
                     cli.write( regex::format( _STRING_ (
-                       .uk-child-margin-${0}${2}>:not([class*="uk-margin"]){ margin:${1}; } 
-                       .uk-margin-${0}${2}                                  { margin:${1}; }
+                       .uk-child-margin-${0}${2}>:not([class*="uk-margin"]){ margin:${1} !important; } 
+                       .uk-margin-${0}${2}                                 { margin:${1} !important; }
                     ), item.first, item.second, size.first ));
                 }
 

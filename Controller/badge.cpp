@@ -38,6 +38,7 @@ namespace uk {
                     border-radius: 30px;
                     text-align: center;
                     padding: 0px 10px; 
+                    user-select: none;
                     width: auto;
                 }
             ));

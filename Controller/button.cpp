@@ -13,6 +13,24 @@ namespace uk {
 
                 .uk-button:active { opacity: 60% !important; }
 
+                .uk-button-icon {
+                    background-color: var(--none);
+                    border: 1px solid var(--none);
+                    border-color: var(--none);
+                    -webkit-appearance: none;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    border-radius: 5px;
+                    user-select: none;
+                    font-weight: 600;
+                    cursor: pointer;
+                    font-size: 16px;
+                    color: inherit;
+                    display: flex;
+                    padding: 10px;
+                }
+
                 .uk-button {
                     background-color: var(--none);
                     border: 1px solid var(--none);
@@ -24,6 +42,7 @@ namespace uk {
                     text-align: center;
                     border-radius: 5px;
                     padding: 6px 10px;
+                    user-select: none;
                     font-weight: 600;
                     cursor: pointer;
                     font-size: 16px;

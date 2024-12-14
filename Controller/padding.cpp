@@ -32,8 +32,8 @@ namespace uk {
                     { "2xlarge", "40px" }
                 }).data() ){
                     cli.write( regex::format( _STRING_ (
-                       .uk-child-padding-${0}${2}>:not([class*="uk-padding"]){ padding:${1}; } 
-                       .uk-padding-${0}${2}                                  { padding:${1}; }
+                       .uk-child-padding-${0}${2}>:not([class*="uk-padding"]){ padding:${1} !important; } 
+                       .uk-padding-${0}${2}                                  { padding:${1} !important; }
                     ), item.first, item.second, size.first ));
                 }
 

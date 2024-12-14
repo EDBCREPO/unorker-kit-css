@@ -27,9 +27,9 @@ namespace uk {
                     white-space: nowrap;
                     text-transform: none;
                     display: inline-block;
-                    letter-spacing: normal;
                     -webkit-font-smoothing: antialiased;
                     -webkit-font-feature-settings: 'liga';
+                    letter-spacing: normal; user-select: none;
                 }
 
             ));

@@ -15,12 +15,11 @@ namespace uk {
                     flex-direction: column; display: flex;
                     left: 0; top:100%; list-style: none;
                     background-color: var(--secondary);
+                    border: inherit; user-select: none;
                     border-radius: 0px 0px 5px 5px;
-                    border: inherit;
                 }
 
                 [class*="uk-dropdown"]>ul, .uk-dropdown>input                { display: none; }
-                [class*="uk-dropdown"]                                       { position: relative; z-index: 1000; transition: none; padding: 6px 10px; cursor: pointer; }
 
                 .uk-dropdown:has(:checked),.uk-dropdown-bottom:has(:checked) { border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
 
@@ -28,6 +27,8 @@ namespace uk {
                 .uk-dropdown-bottom:hover>ul, .uk-dropdown-bottom>ul:hover   { left:0; top:100%; bottom:unset; right:unset; }
                 .uk-dropdown-right:hover>ul,  .uk-dropdown-right>ul:hover    { left:unset; top:unset; bottom:unset; right:100%; transform:translate( 0px, -50% ); }
                 .uk-dropdown-left:hover>ul,   .uk-dropdown-left>ul:hover     { left:100%; top:unset; bottom:unset; right:unset; transform:translate( 0px, -50% ); }
+                
+                [class*="uk-dropdown"]                                       { position: relative; z-index: 1000; transition: none; padding: 6px 10px; cursor: pointer; user-select: none; }
 
             ));
 
