@@ -22,11 +22,11 @@ namespace uk {
                 }
 
                 cli.write( regex::format( _STRING_(
+                    .uk-flex${0}         { align-content: normal; display: flex; }
                     .uk-flex-inline${0}  { display: inline-flex; }
-                    .uk-flex-initial${0} { flex: initial; }
-                    .uk-flex-none${0}    { flex: none; }
-                    .uk-flex-auto${0}    { flex: auto; }
-                    .uk-flex${0}         { display: flex; }
+                    .uk-flex-initial${0} { flex:    initial;     }
+                    .uk-flex-none${0}    { flex:    none;        }
+                    .uk-flex-auto${0}    { flex:    auto;        }
                 ), size.first ));
 
                 for( auto& item: map_t<string_t,string_t>({
