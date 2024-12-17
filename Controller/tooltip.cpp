@@ -36,11 +36,11 @@ namespace uk {
                 .uk-tooltip:hover::after {
                     transform: translateX(-50%) translateY(-100%);
                     text-transform: capitalize !important;
+                    background: var(--neutral);
                     content: attr(tooltip);
                     color: var(--light);
                     text-align: center;
                     position: absolute;
-                    background: var(--neutral);
                     padding:4px 2px;
                     font-size: 12px;
                     min-width: 80px;
