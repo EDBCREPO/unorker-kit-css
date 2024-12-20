@@ -44,8 +44,8 @@ namespace uk {
                    .uk-child-width-auto${0}>:not([class*='uk-width'])  { width: 100%; flex: auto; min-width: unset; max-width:unset; }
                    .uk-width-auto${0}                                  { width: 100%; flex: auto; min-width: unset; max-width:unset; }
 
-                   .uk-child-width-expand${0}>:not([class*='uk-width']){ min-width: 100vw; }
-                   .uk-width-expand${0}                                { min-width: 100vw; }
+                   .uk-child-width-expand${0}>:not([class*='uk-width']){ min-width: fit-content; }
+                   .uk-width-expand${0}                                { min-width: fit-content; }
 
                    .uk-child-width-fill${0}>:not([class*='uk-width'])  { min-width: 100%; }
                    .uk-width-fill${0}                                  { min-width: 100%; }

@@ -39,7 +39,7 @@ namespace uk {
 
                 /*.........................................................................*/
 
-                * { color: inherit; text-decoration: none !important; transition: all 0.3s ease-in-out; align-content: flex-start; box-sizing: border-box; }
+                * { color: inherit; text-decoration: none !important; align-content: flex-start; box-sizing: border-box; margin: 0px; }
 
                 audio, canvas, iframe, img, svg, video { vertical-align: middle; max-width: 100%; height: auto; }
 
